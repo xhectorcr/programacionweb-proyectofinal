@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hombre | Nike</title>
+    <link rel="stylesheet" href="../css/emcabezado.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="../css/hombres.css">
+    <link rel="icon" href="../img/PaginaPrincipal/icon.png">
+</head>
+
+<body>
+
+    <section id="header">
+        <section id="header">
+            <a href="paginas/index.html">
+                <img src="../img/PaginaPrincipal/nikeLogo.png" class="logo" height="30" width="70">
+            </a>
+
+            <div>
+                <ul id="navbar">
+                    <li><a href="../index.html">Principal</a></li>
+                    <li><a href="../paginas/hombre.html">Hombre</a></li>
+                    <li><a href="../paginas/mujer.html">Mujer</a></li>
+                    <li><a href="../paginas/niños.html">Niños</a></li>
+                    <li><a href="../paginas/descuentos.html">Descuentos</a></li>
+                    <li><a href="../paginas/login.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></li>
+
+                </ul>
+            </div>
+        </section>
+    </section>
+    <div style="border: 2px; display: flex; justify-content: center; align-items: center;">
+        <p id="randomText" style="font-size: 24px; text-align: center;"><strong>Lo nuevo y mejor lo encuentras aquí❗</strong></p>
+    </div>
+    <div class="search-sort-container">
+        <input type="text" id="searchInput" placeholder="Buscar productos..." onkeyup="searchProducts(event)">
+        <select id="sortSelect" onchange="sortProducts()">
+            <option value="">Ordenar por</option>
+            <option value="priceAsc">Precio: Menor a Mayor</option>
+            <option value="priceDesc">Precio: Mayor a Menor</option>
+            <option value="nameAsc">Nombre: A - Z</option>
+            <option value="nameDesc">Nombre: Z - A</option>
+        </select>
+    </div>
+    <section>
+        <div class="product-table">
+            <div class="product-grid">
+
+                <div class="product-card">
+
+                    <a href="../paginas/producto-hombre/Nike-Free-RN-NN.html">
+                        <img src="../img/PaginaHombre/zapatillas_correr.png" alt="Zapatillas para Correr"
+                            class="product-img">
+                    </a>
+                    <div class="product-name">Nike Free RN NN</div>
+                    <div class="product-description">Zapatillas ligeras y flexibles para correr.</div>
+                    <div class="product-price">$100</div>
+                </div>
+            </div>
+            <div class="product-grid">
+                <div class="product-card">
+
+                    <a href="../paginas/producto-hombre/Cosmic-Unity-3.html">
+                        <img src="../img/PaginaHombre/zapatillas_basquet.png" alt="Zapatillas de Básquet"
+                            class="product-img">
+                    </a>
+                    <div class="product-name">Cosmic Unity 3</div>
+                    <div class="product-description">Zapatillas de alto rendimiento para básquetbol.</div>
+                    <div class="product-price">$120</div>
+                </div>
+            </div>
+            <div class="product-grid">
+                <div class="product-card">
+
+                    <a href="../paginas/producto-hombre/Nike-Solo-Swoosh.html">
+                        <img src="../img/PaginaHombre/polera_deportiva.png" alt="Polera Deportiva"
+                            class="product-img"></a>
+                    <div class="product-name">Polera Deportiva</div>
+                    <div class="product-description">Polera cómoda y transpirable para entrenamientos.</div>
+
+                    <div class="product-price">$30</div>
+                </div>
+            </div>
+            <div class="product-grid">
+                <div class="product-card">
+
+                    <a href="../paginas/producto-hombre/Nike-Strike.html">
+                        <img src="../img/PaginaHombre/shorts_deportivos.png" alt="Shorts Deportivos"
+                            class="product-img"></a>
+                            <div class="product-name">Nike Strike</div>
+                    <div class="product-description">Shorts ligeros y cómodos para deportes.</div>
+                    
+                    <div class="product-price">$25</div>
+                </div>
+            </div>
+            <div class="product-grid">
+
+                <div class="product-card">
+                    
+                    <a href="../paginas/producto-hombre/Nike-Sportswear-Tech-Fleece-Windrunner.html">
+                        <img src="https://www.nike.com.pe/on/demandware.static/-/Sites-catalog-equinox/default/dw2c52a740/images/hi-res/197593374738_1_20240430-mrtPeru.jpg"
+                            alt="Chaqueta Deportiva" class="product-img"></a>
+                    <div class="product-name">Chaqueta Deportiva</div>
+                    <div class="product-description">Chaqueta resistente al viento y al agua.</div>
+                    <div class="product-price">$80</div>
+                </div>
+            </div>
+            <div class="product-grid">
+                <div class="product-card">
+
+                    <a href="../paginas/producto-hombre/Nike-Dri-FIT-Club.html">
+                        <img src="../img/PaginaHombre/gorra_deportiva.png" alt="Gorra Deportiva" class="product-img">
+                    </a>
+                    <div class="product-name">Gorra Deportiva</div>
+                    <div class="product-description">Gorra ajustable y transpirable.</div>
+                    <div class="product-price">$20</div>
+                </div>
+            </div>
+            <div class="product-grid">
+                <div class="product-card">
+
+                    <a href="../paginas/producto-hombre/Medias-Jordan.html">
+                        <img src="../img/PaginaHombre/calcetines_deportivos.png" alt="Calcetines Deportivos"
+                            class="product-img"></a>
+                    <div class="product-name">Calcetines Deportivos</div>
+                    <div class="product-description">Calcetines acolchados para mayor comodidad.</div>
+                    <div class="product-price">$10</div>
+                </div>
+            </div>
+            <div class="product-grid">
+                <div class="product-card">
+
+                    <a href="../paginas/producto-hombre/Nike-Hike.html">
+                        <img src="../img/PaginaHombre/mochila_deportiva.png" alt="Mochila Deportiva"
+                            class="product-img"></a>
+                    <div class="product-name">Mochila Deportiva</div>
+                    <div class="product-description">Mochila espaciosa y duradera.</div>
+                    <div class="product-price">$50</div>
+                </div>
+
+            </div>
+            <div class="product-grid">
+                <div class="product-card">
+
+                    <a href="../paginas/producto-hombre/Nike-Recharge.html">
+                        <img src="../img/PaginaHombre/botella_agua.png" alt="Botella de Agua" class="product-img"></a>
+                    <div class="product-name">Nike Recharge</div>
+                    <div class="product-description">Botella reutilizable y libre de BPA.</div>
+                    <div class="product-price">$15</div>
+                </div>
+            </div>
+            <div class="product-grid">
+                <div class="product-card">
+
+                    <a href="../paginas/producto-hombre/GuantesGymNike.html">
+                        <img src="../img/PaginaHombre/guantes_deportivos.png" alt="Guantes Deportivos"
+                            class="product-img"></a>
+                    <div class="product-name">Guantes</div>
+                    <div class="product-description">Guantes con agarre antideslizante.</div>
+                    <div class="product-price">$18</div>
+                </div>
+            </div>
+            <div class="product-grid">
+                <div class="product-card">
+
+                    <a href="../paginas/producto-hombre/CamisetaAlianLima.html">
+                        <img src="../img/PaginaHombre/camiseta_AlianzaLima.png" alt="Cinturón Deportivo"
+                            class="product-img"></a>
+                    <div class="product-name"> Camiseta Hombre Alianza Lima 2024 Visita</div>
+                    <div class="product-description">Camiseta de fútbol para hombre
+                    </div>
+                    <div class="product-price">$22</div>
+                </div>
+            </div>
+            <div class="product-grid">
+                <div class="product-card">
+
+                    <a href="../paginas/producto-hombre/CorreaRelojNike.html">
+                        <img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/e7a9068f-d020-4005-aad5-7005869f3856/NK+AWN+SPORT+BAND+40MM+S%2FM+NA.png"
+                            alt="Reloj Deportivo" class="product-img"></a>
+                    <div class="product-name">Correa Deportiva nike</div>
+                    <div class="product-description">Correa de reloj de monitor de actividad.</div>
+                    <div class="product-price">$15</div>
+                </div>
+            </div>
+            <div class="product-grid">
+
+                <div class="product-card">
+
+                    <a href="../paginas/producto-hombre/BandanaParaSudor.html">
+                        <img src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/988e3a8c-c0d4-469c-b2ba-ec4613766661/JORDAN+JUMPMAN+HEADBAND.png"
+                            alt="Banda para la Cabeza" class="product-img"></a>
+                    <div class="product-name">Cinta para el pelo</div>
+                    <div class="product-description">Banda absorbente de sudor.</div>
+                    <div class="product-price">$12</div>
+                </div>
+            </div>
+            <div class="product-grid">
+                <div class="product-card">
+
+                    <a href="../paginas/producto-hombre/CamisaCompresionBlanca.html">
+                        <img src="../img/PaginaHombre/camiseta_compresion.png" alt="Camiseta de Compresión"
+                            class="product-img"></a>
+                    <div class="product-name">Nike Pro</div>
+                    <div class="product-description">Camiseta ajustada para mejor rendimiento.</div>
+                    <div class="product-price">$35</div>
+                </div>
+            </div>
+            <div class="product-grid">
+                <div class="product-card">
+
+                    <a href="../paginas/producto-hombre/PantalonesNike.html">
+                        <img src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/cf541562-7eb4-49b0-ba36-a471f9250070/M+NK+DF+UNLIMITED+PANT+ALT.png"
+                            alt="Pantalones Deportivos" class="product-img"></a>
+                    <div class="product-name">Nike Unlimited</div>
+                    <div class="product-description">Pantalones cómodos y flexibles.</div>
+
+                    <div class="product-price">$80</div>
+                </div>
+            </div>
+            <div class="product-grid">
+                <div class="product-card">
+
+                    <a href="../paginas/producto-hombre/Nike Air VaporMax 2023 Flyknit.html">
+                        <img src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/5cc1db77-55bb-4b53-bf91-f656d89640e3/AIR+VAPORMAX+2023+FK.png"
+                            alt="Nike Air Max 2090" class="product-img">
+                    </a>
+                    <div class="product-name">zapatillas Nike</div>
+                    <div class="product-description">Nike Air VaporMax 2023 Flyknit.</div>
+                    <div class="product-price">$150</div>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+    <script src="../js/busqueda.js"></script>
+</body>
+
+<footer>
+    <div class="footer-container">
+        <!-- Sección de información de contacto -->
+        <div class="footer-section">
+            <h4>Contacto</h4>
+            <p>Teléfono: +51 123456789</p>
+            <p>Email: contacto@nike.com</p>
+        </div>
+
+        <!-- Sección de redes sociales -->
+        <div class="footer-section">
+            <h4>Redes sociales</h4>
+            <a href="https://facebook.com" target="_blank">Facebook</a> |
+            <a href="https://twitter.com" target="_blank">Twitter</a> |
+            <a href="https://instagram.com" target="_blank">Instagram</a>
+        </div>
+
+        <!-- Sección de WhatsApp -->
+        <div class="footer-section">
+            <h4>Envíanos un mensaje</h4>
+            <a href="https://wa.me/1234567890?text=Hola,%20me%20interesa%20más%20información" target="_blank">
+                Enviar mensaje por WhatsApp
+            </a>
+        </div>
+    </div>
+
+    <!-- Sección de derechos de autor -->
+    <div class="footer-bottom">
+        <p>&copy; 2024 Mi Tienda. Todos los derechos reservados.</p>
+    </div>
+</footer>
+
+</html>

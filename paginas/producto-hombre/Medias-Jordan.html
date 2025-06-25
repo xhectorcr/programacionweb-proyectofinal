@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hombre | Nike</title>
+    <link rel="stylesheet" href="css/emcabezado.css">
+    <link rel="stylesheet" href="css/hombres.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="../../css/cssproductoshombres.css">
+    <link rel="icon" href="../img/PaginaPrincipal/icon.png">
+</head>
+
+<body>
+    <section id="header">
+        <a href="../../paginas/index.html">
+            <img src="../../img/PaginaPrincipal/NikeLogo.png" class="logo" height="30" width="70">
+        </a>
+
+        <div>
+            <ul id="navbar">
+                <li><a class="activo" href="../../paginas/index.html">Principal</a></li>
+                <li><a href="../hombre.html">Hombre</a></li>
+                <li><a href="../mujer.html">Mujer</a></li>
+                <li><a href="../niños.html">Niños</a></li>
+                <li><a href="../descuentos.html">Descuentos</a></li>
+                <li><a href="../login.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></li>
+
+            </ul>
+        </div>
+    </section>
+    <br>
+    <br>
+    <section>
+        <div class="container">
+            <div class="product">
+                <div class="product-images">
+                    <img src="../../img/PaginaHombre/calcetines_deportivos.png" alt="Jordan medias - Vista frontal"
+                        class="main-image" id="mainImage">
+                    <div class="thumbnail-container">
+                        <img src="../../img/PaginaHombre/calcetines_deportivos.png" alt="Jordan medias - Vista lateral1"
+                            class="thumbnail">
+                        <img src="https://www.nike.com.pe/dw/image/v2/BJKZ_PRD/on/demandware.static/-/Sites-catalog-equinox/default/dw9e2860a6/images/hi-res/196152694065_2_20240129120000-mrtPeru.jpg?sw=800&sh=800"
+                            alt="Jordan medias - Vista lateral2" class="thumbnail">
+                        <img src="https://www.nike.com.pe/dw/image/v2/BJKZ_PRD/on/demandware.static/-/Sites-catalog-equinox/default/dw49fbaad8/images/hi-res/196152694065_3_20240129120000-mrtPeru.jpg?sw=800&sh=800"
+                            alt="Jordan medias - Vista lateral3" class="thumbnail">
+                        <img src="https://www.nike.com.pe/dw/image/v2/BJKZ_PRD/on/demandware.static/-/Sites-catalog-equinox/default/dw69dac031/images/hi-res/196152694065_4_20240129120000-mrtPeru.jpg?sw=800&sh=800"
+                            alt="Jordan medias - Vista lateral4" class="thumbnail">
+                    </div>
+                </div>
+                <div class="product-info">
+                    <h1>Jordan Medias</h1>
+                    <div class="price">$10</div>
+                    <div class="description">
+                        <p>Estos Medias al tobillo mantienen la frescura y la transpirabilidad gracias a la tela absorbente de sudor y los paneles transpirables en el tobillo. Se ajustan alrededor del arco para brindarte una sensación adicional de soporte.
+                        </p>
+                    </div>
+                    <div class="sizes">
+                        <button class="color-button" onclick="activateButton(this)">S</button>
+                        <button class="color-button" onclick="activateButton(this)">M</button>
+                        <button class="color-button" onclick="activateButton(this)">L</button>
+                        
+                    </div>
+                    <button class="add-to-cart" onclick="addToCart()">Agregar al carrito</button><br><br>
+                    <button class="add-to-favoritos" onclick="addToFavorites(this)">Agregar a Favoritos ♡ </button>
+                </div>
+            </div>
+            <div class="specifications-container">
+                <div class="specifications">
+                    <h2>Especificaciones</h2>
+                    <ul>
+                        <li>El arco cómodo brinda una sensación de soporte y comodidad.</li>
+                        <li>Los paneles transpirables en la parte superior proporcionan ventilación.</li>
+                        <li>El refuerzo amortiguado en la puntera y las suelas aporta durabilidad.</li>
+
+
+                    </ul>
+                </div>
+                <div class="specifications2">
+
+                    <ul>
+                        <li>97% poliéster, 2% spandex, 1% nylon.</li>
+                        <li>Lavar a máquina</li>
+                        <li>Producto importado</li>
+
+                    </ul>
+                </div>
+            </div>
+
+            <div class="related-products">
+                <h2>También te puede interesar</h2>
+                <div class="product-grid">
+                    <div class="product-card">
+                        <a href="../producto-hombre/Nike-Recharge.html"><img src="../../img/PaginaHombre/botella_agua.png" alt="botella_agua"></a>                        
+                        <h3>Botella de agua</h3>
+                        <p>$100</p>
+                    </div>
+                    <div class="product-card">
+                        <img src="../../img/PaginaHombre/banda_cabeza.png" alt="banda_cabeza">
+                        <h3>Bandana para sudor</h3>
+                        <p>$120</p>
+                    </div>
+                    <div class="product-card">
+                        <a href="../producto-hombre/Nike-Free-RN-NN.html"><img src="../../img/PaginaHombre/zapatillas_correr.png" alt="calcetines_deportivos"></a>
+                        <h3>Calcetines deportivos</h3>
+                        <p>$130</p>
+                    </div>
+                    <div class="product-card">
+                        <img src="../../img/PaginaHombre/camiseta_AlianzaLima.png" alt="camiseta_AlianzaLima">
+                        <h3>Alianza Lima Camiseta</h3>
+                        <p>$100</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="../../js/jsprueba.js"></script>
+</body>
+
+</html>

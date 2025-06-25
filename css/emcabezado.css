@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 40px;
+    background: #ffffff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    z-index: 999;
+    width: 100%;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    flex-grow: 1; /* Permite que el navbar ocupe el espacio disponible */
+}
+
+#navbar li {
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+
+#navbar li a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #1A1A1A;
+    transition: 1.0s ease;
+}
+
+/* Media queries para pantallas pequeñas */
+@media (max-width: 768px) {
+    #header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px 20px;
+    }
+
+    .logo {
+        margin-bottom: 10px;
+    }
+    
+    .menu-toggle {
+        display: none;
+        font-size: 24px;
+        cursor: pointer;
+    }
+    
+
+    #navbar {
+        flex-direction: column; 
+        align-items: flex-start;
+        flex-wrap: wrap; /* Permite que los elementos se ajusten en una nueva línea si es necesario */
+        width: 100%;
+        display: none; /* Oculta el menú por defecto */
+        
+        justify-content: center;
+        display: flex; /* Asegura que el menú esté visible */
+    }
+
+    #navbar li {
+        width: 100%; /* Asegura que los elementos no ocupen todo el ancho */
+        text-align: left;
+        padding: 10px 0; /* Ajusta el padding según sea necesario */
+    }
+
+    #navbar li a {
+        padding: 10px 10px; /* Ajusta el padding según sea necesario */
+        width: 100%; 
+        display:block; /* Mantiene los enlaces en línea */
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    #navbar.active {
+        display: flex; /* Mostrar el menú cuando esté activo */
+    }
+}
+/* Media queries específicas para iPad Mini (768px de ancho) */
+@media (min-width: 768px) and (max-width: 1024px) {
+    #header {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 20px;
+    }
+
+    .logo {
+        margin-right: auto;
+    }
+
+    #navbar {
+        flex-direction: row;
+        justify-content: center;
+        width: auto;
+    }
+
+    #navbar li {
+        width: auto;
+        text-align: center;
+        padding: 10px 15px;
+    }
+
+    #navbar li a {
+        padding: 10px 15px;
+        width: auto;
+        display: inline-block;
+    }
+
+    .menu-toggle {
+        display: none; /* Ocultar el botón de menú en pantallas más grandes */
+    }
+}

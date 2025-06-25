@@ -1,0 +1,110 @@
+body {
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+    color: #333;
+    margin: 0;
+    display: flex;
+    flex-direction: column; /* Organiza elementos verticalmente */
+    align-items: center; /* Centra horizontalmente */
+    justify-content: center; /* Centra verticalmente */
+    min-height: 100vh; /* Ocupa toda la altura de la pantalla */
+    box-sizing: border-box; /* Manejo consistente de espacios */
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column; /* Coloca el título encima de los productos */
+    align-items: center; /* Centra el contenido */
+    justify-content: center; /* Centra verticalmente */
+    width: 100%;
+}
+
+.header {
+    margin-bottom: 20px; /* Espaciado entre el encabezado y los productos */
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.product-table {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centra horizontalmente las tarjetas */
+    gap: 20px; /* Espaciado entre elementos */
+    padding: 20px;
+    width: 100%;
+    max-width: 1200px; /* Limita el ancho total */
+}
+
+.product-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    width: 220px; /* Ajuste del tamaño */
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    margin: 10px; /* Separación */
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+}
+
+.product-image img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.product-details h2 {
+    font-size: 1em;
+    margin: 10px 0;
+}
+
+.product-description {
+    font-size: 0.9em;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.price {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background: #fff;
+    width: 500px;
+    height: 600px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+    position: relative;
+    overflow: hidden;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.close-button {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #333;
+}
+

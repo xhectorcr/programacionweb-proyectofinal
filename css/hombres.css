@@ -1,0 +1,323 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    margin-top: 80px;
+}
+.product-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.product-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+    vertical-align: top;
+    width: 25%;
+    box-sizing: border-box;
+     
+}
+.product-card {
+    align-items: center;
+    flex: 1 1 calc(25% - 20px);
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    margin: 15px;
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+}
+
+.product-table img {
+    width: 100%;
+    height: auto;
+    max-width: 300px; 
+    border-radius: 10px;
+}
+
+
+.product-name {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.product-price {
+    text-align: right;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Productos - Hombres */
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.product {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+.product-image {
+    flex: 1;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+.main-image {
+    width: 700px;
+    height: auto;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.thumbnail-container {
+    display: flex;
+    gap: 10px;
+}
+.thumbnail {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    cursor: pointer;
+}
+.product-info {
+    flex: 1;
+}
+h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+.price {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.description {
+    margin-bottom: 20px;
+}
+.sizes {
+    margin-bottom: 20px;
+}
+.color-button {
+    background-color: rgb(251, 248, 248);
+    border: 1px solid #5c5c5c;
+    padding: 10px 15px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.color-buttonn {
+    background-color: rgb(9, 9, 9);
+    color: white;
+    border: 1px solid #f4f2f2;
+    padding: 10px 15px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.color-button:hover {
+    background-color: #c9c5c5;
+}
+.add-to-cart {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 30px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.add-to-cart:hover {
+    background-color: #333;
+}
+.add-to-favoritos {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border-color:none;
+    padding: 15px 30px;
+    font-size: 30px;
+    cursor: pointer;
+    border-radius: 50px;
+}
+.add-to-favoritos:hover {
+    border-color: #000000;
+    
+}
+.specifications {
+    margin-top: 40px;
+}
+.specifications-container {
+    display: flex;
+    gap: 20px; 
+}
+.specifications2 {
+    padding-top: 85px;
+}
+.specifications, .specifications2 {
+    flex: 1; 
+}
+.related-products {
+    margin-top: 60px;
+}
+.related-products h2 {
+    margin-bottom: 20px;
+}
+.product-grid {
+    display: flex;
+    grid-template-columns: repeat(4, 1fr);
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+.product-card {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+    flex: 1 1 calc(25% - 20px);
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+    margin: 10px 0;
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 400px;
+    width: 225px;
+    
+}
+.product-card img {
+    width: 100%;
+    height: auto;
+}
+.product-card {
+    align-items: center;
+    
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center, below;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    margin: 15px;
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+}
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.9);
+}
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.search-sort-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+#searchInput, #sortSelect {
+    padding: 10px 15px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#searchInput {
+    width: 250px;
+}
+
+#sortSelect {
+    margin-left: 15px;
+}
+
+#searchInput:focus, #sortSelect:focus {
+    outline: none;
+    border-color: #000;
+}
+
+#searchInput {
+    background-image: url('data:image/svg+xml;base64,PHN2ZyBmaWxsPSIjY2NjIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCI+PHBhdGggZD0iTTguNSAxNWMtMy40MTQgMC02LjItMi43ODctNi4yLTYuMnMyLjc4Ny02LjIgNi4yLTYuMnM2LjIgMi43ODcgNi4yIDYuMi0yLjc4NyA2LjItNi4yIDYuMnpNMCAxNmE4LjUgOC41IDAgMTAxNyAwIDguNSA4LjUgMCAwMC0xNyAweiIvPjxwYXRoIGQ9Ik0xNS44NTQgMTUuMTU0TDEyLjUgMTEuNzkxVjEwLjc1M0wxNS4yNTIgMTQuMTA3TDE1Ljg1NCAxNS4xNTR6Ii8+PC9zdmc+');
+    background-repeat: no-repeat;
+    background-position: 10px center;
+    padding-left: 40px;
+}
+
+#searchInput::placeholder {
+    color: #999;
+    font-style: italic;
+}
+/* Pantallas medianas (tablets) */
+@media (max-width: 992px) {
+    .product-card {
+        flex: 1 1 calc(33.33% - 20px); /* Tres columnas */
+    }
+}
+
+/* Pantallas pequeñas (móviles) */
+@media (max-width: 768px) {
+    .product-card {
+        flex: 1 1 calc(50% - 20px); /* Dos columnas */
+    }
+}
+
+/* Pantallas extra pequeñas */
+@media (max-width: 576px) {
+    .product-card {
+        flex: 1 1 100%; /* Una columna */
+    }
+}
+/* Pantallas extra pequeñas (Pixel 7 y similares) */
+@media (max-width: 393px) {
+    .product-card {
+        flex: 1 1 100%; /* Una columna */
+    }
+}
+/* Ajuste para pantallas medianas */
+@media (max-width: 992px) {
+    .product-card {
+        flex: 1 1 calc(50% - 20px); /* Dos columnas */
+    }
+}
+
+/* Ajuste para pantallas pequeñas */
+
+
+/* Estilos para las imágenes */
+.product-img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+

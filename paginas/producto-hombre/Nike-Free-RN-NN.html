@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hombre | Nike</title>
+    <link rel="stylesheet" href="css/emcabezado.css">
+    <link rel="stylesheet" href="css/hombres.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="../../css/cssproductoshombres.css">
+    <link rel="icon" href="../img/PaginaPrincipal/icon.png">
+</head>
+
+<body>
+    <section id="header">
+        <a href="../../paginas/index.html">
+            <img src="../../img/PaginaPrincipal/NikeLogo.png" class="logo" height="30" width="70">
+        </a>
+
+        <div>
+            <ul id="navbar">
+                <li><a class="activo" href="../../paginas/index.html">Principal</a></li>
+                <li><a href="../hombre.html">Hombre</a></li>
+                <li><a href="../mujer.html">Mujer</a></li>
+                <li><a href="../niños.html">Niños</a></li>
+                <li><a href="../descuentos.html">Descuentos</a></li>
+                <li><a href="../login.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></li>
+
+            </ul>
+        </div>
+    </section>
+    <br>
+    <br>
+    <section>
+        <div class="container">
+            <div class="product">
+                <div class="product-images">
+                    <img src="../../img/PaginaHombre/zapatillas_correr.png" alt="Nike Air Max 2090 - Vista frontal"
+                        class="main-image" id="mainImage">
+                    <div class="thumbnail-container">
+                        <img src="../../img/PaginaHombre/zapatillas_correr.png" alt="Nike Free RN NN - Vista lateral1"
+                            class="thumbnail">
+                        <img src="../../img/PaginaHombre/Nike-FR-NN.jpg" alt="Nike Free RN NN - Vista lateral2"
+                            class="thumbnail">
+                        <img src="../../img/PaginaHombre/Nike-FR-NN2.jpg" alt="Nike Free RN NN - Vista lateral3"
+                            class="thumbnail">
+                        <img src="../../img/PaginaHombre/Nike-FR-NN3.jpg" alt="Nike Free RN NN - Vista lateral4"
+                            class="thumbnail">
+                    </div>
+                </div>
+                <div class="product-info">
+                    <h1>Nike Free RN NN</h1>
+                    <div class="price">$100</div>
+                    <div class="description">
+                        <p>Si es libertad lo que anhelas, este correcaminos puede ayudar a que te sueltes. Con un diseño ligero y flexible, la pisada natural y la parte superior Flyknit de este calzado harán que te muevas con alegría y con ganas de seguir sumando kilómetros.</p>
+                    </div>
+                    <div class="sizes">
+                        <button class="color-button" onclick="activateButton(this)">7</button>
+                        <button class="color-button" onclick="activateButton(this)">7.5</button>
+                        <button class="color-button" onclick="activateButton(this)">8</button>
+                        <button class="color-button" onclick="activateButton(this)">8.5</button>
+                        <button class="color-button" onclick="activateButton(this)">9</button>
+                        <button class="color-button" onclick="activateButton(this)">9.5</button>
+                        <button class="color-button" onclick="activateButton(this)">10</button>
+                    </div>
+                    <button class="add-to-cart" onclick="addToCart()">Agregar al carrito</button><br><br>
+                    <button class="add-to-favoritos" onclick="addToFavorites(this)">Agregar a Favoritos ♡ </button>
+                </div>
+            </div>
+            <div class="specifications-container">
+                <div class="specifications">
+                    <h2>Especificaciones</h2>
+                    <ul>
+                        <li>Hecho con Nike Grind: La suela está fabricada con al menos un 13% de material Nike Grind,
+                            que proviene de restos del proceso de fabricación de calzado.</li>
+                        <li>Ligero para todos tus movimientos: El Flyknit proporciona una comodidad similar a la de un
+                            calcetín gracias a su tela suave, elástica y transpirable, manteniendo una sensación de
+                            ligereza y ventilación incluso durante carreras intensas. La funda interior es minimalista
+                            pero elástica.</li>
+                        <li>Suave en el medio: La entresuela ultraligera ofrece una comodidad increíble a medidaque los
+                            pies impactan repetidamente contra la carretera. Es más ligera, con mejor respuesta y más
+                            suave que las versiones anteriores</li>
+                        <li>Mantente seguro: Los ojales bordados alrededor de las agujetas garantizan que lospies
+                            permanezcan seguros. Las presillas de agarre en la lengüeta y el talón facilitan ponerse el
+                            calzado con una sola mano.</li>
+                       
+                    </ul>
+                </div>
+                <div class="specifications2">
+
+                    <ul>
+                        <li>Flexibilidad adicional
+
+                            Las ranuras cortadas a láser en la suela hacen que este calzado sea más flexible.</li>
+                        <li>Datos del producto
+
+                            Este producto no está diseñado para usarse como equipo de protección personal (EPP)</li>
+
+
+                    </ul>
+                </div>
+            </div>
+
+            <div class="related-products">
+                <h2>También te puede interesar</h2>
+                <div class="product-grid">
+                    <div class="product-card">
+                        <a href="../producto-hombre/Nike-Recharge.html"><img src="../../img/PaginaHombre/botella_agua.png" alt="botella_agua"></a>                        <h3>Botella de agua</h3>
+                        <p>$100</p>
+                    </div>
+                    <div class="product-card">
+                        <img src="../../img/PaginaHombre/banda_cabeza.png" alt="banda_cabeza">
+                        <h3>Bandana para sudor</h3>
+                        <p>$120</p>
+                    </div>
+                    <div class="product-card">
+                        <a href="../producto-hombre/Medias-Jordan.html"><img src="../../img/PaginaHombre/calcetines_deportivos.png" alt="calcetines_deportivos"></a>
+                        
+                        <h3>Calcetines deportivos</h3>
+                        <p>$130</p>
+                    </div>
+                    <div class="product-card">
+                        <img src="../../img/PaginaHombre/camiseta_AlianzaLima.png" alt="camiseta_AlianzaLima">
+                        <h3>Alianza Lima Camiseta</h3>
+                        <p>$100</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="../../js/jsprueba.js"></script>
+</body>
+
+</html>
